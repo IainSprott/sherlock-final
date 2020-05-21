@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.typekit.net/wlf0crc.css">
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<div class="baker-street">
+
+  <div class="frame">
+    <div class="door">
+      <button onclick="toggleElement('.enter')"><img src="img/door.png" alt="" width="100%" height="70%">
+    </div>
+    <div class="lamp">
+      <button onclick="toggleElement('.baker')" ><img src="img/lamp.png" alt="" width="80%" height="80%"></button>
+
+    </div>
+  </div>
+</div>
+
+<div class="text-module">
+
+
+  <div class="dialogue">
+
+    <div class="baker js-textbox">
+      <h2>
+        221B Baker Street
+      </h2>
+      <br>
+      <p>
+        221B Baker Street is the London address of the fictional detective Sherlock
+        Holmes, created by the writer Sir Arthur Conan Doyle.
+      </p>
+      <br>
+      <p>
+        At the time the Holmes stories were published, addresses in Baker Street did
+        not go as high as 221. In fact, number 85 was the last number of the street in
+        1890.
+      </p>
+      <br>
+      <p>
+        Baker Street was later extended, and in 1932 the Abbey National Building Society
+        moved into premises at 219–229 Baker Street. For many years, Abbey National employed
+        a full-time secretary to answer mail addressed to Sherlock Holmes.
+      </p>
+    </div>
+
+    <div class="enter js-textbox">
+      <h2>
+        Would you like to continue inside?
+      </h2>
+      <br>
+      <h3>
+        <a href="index.html">Enter The House</a>
+      </h3>
+
+    </div>
+
+  </div>
+
+</div>
+<script>
+function toggleElement(block) {
+  var textBox = document.querySelectorAll(".js-textbox");
+  var currentElement = document.querySelector(block);
+  for (let i = 0; i < textBox.length; i++) {
+    textBox[i].classList.remove('visible');
+  }
+  currentElement.classList.add('visible');
+  }
+</script>
+
+</body>
+
+
+
+</html>

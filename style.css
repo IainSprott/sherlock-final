@@ -1,0 +1,349 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+
+}
+
+
+html , body {
+  font-size: 1vmax;
+  height: 100vh;
+	max-height: 100vh;
+	overflow-y: hidden;
+
+
+}
+
+
+h1 {
+	font-family: alegreya,serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 2.5em;
+	color: white;
+
+
+}
+
+.welcome h2 {
+	font-family: alegreya,serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 2em;
+	color: white;
+
+}
+
+
+h2 {
+
+	font-family: ff-market-web, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 1.5em;
+	color: black;
+	text-align: center;
+
+}
+
+p {
+
+	font-family: ff-market-web, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.25em;
+	color: black;
+	text-align: justify;
+
+
+}
+
+h3 {
+	font-family: ff-market-web, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.25em;
+	color: black;
+	text-align: center;
+
+}
+
+a {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
+
+.living-room {
+  display: grid;
+  grid-template-rows: 70vh;
+  grid-template-columns: 80vw;
+  width: 80vw;
+  margin: 5vh auto 0;
+  grid-gap: .5em;
+  background-image: url(img/background-01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.baker-street {
+	display: grid;
+	grid-template-rows: 70vh;
+	grid-template-columns: 80vw;
+	width: 80vw;
+	margin: 5vh auto 0;
+	grid-gap: .5em;
+	background-image: url(img/baker-street-01-fixed.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+
+}
+
+.heroesandvillains {
+	display: grid;
+	grid-template-rows: 70vh;
+	grid-template-columns: 80vw;
+	width: 80vw;
+	margin: 5vh auto 0;
+	grid-gap: .5em;
+	background-image: url(img/wall-paper-02.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+
+
+}
+
+.text-module {
+	display: grid;
+	grid-template-rows: 20vh;
+	grid-template-columns: 80vw;
+	width: 80vw;
+	margin: 2vh auto 0;
+	background-color: Gainsboro;
+	outline: 1em ridge #999999;
+	outline-offset: -1em;
+
+
+
+}
+
+.container-2 {
+  display: grid;
+  grid-template-rows: 100vh;
+  grid-template-columns: 100vw;
+  margin: auto;
+  grid-gap: .5em;
+  background-image: url(img/background-01.png);
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+
+
+}
+
+iframe {
+	position: absolute;
+	top:0; right: 0; left: 0; bottom:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+
+
+}
+
+.frame-2 {
+	display: grid;
+	margin: auto;
+	height: 75vh;
+	width: 75vw;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+	backdrop-filter: blur(10px);
+	align-items: center;
+
+
+}
+
+.bookshelf {
+	grid-area: 5 / 1 / 16 / 3;
+  align-self: stretch;
+	margin-left: vw;
+
+}
+
+.table {
+  grid-area: 14 / 1 / 21 / 5;
+  align-self: stretch;
+	margin-left: vw;
+
+}
+
+.camera {
+  grid-area: 12 / 1 / 16 / 4;
+	align-self: end;
+	margin-left: vw;
+
+}
+
+.hat {
+  grid-area: 6 / 18 / 7 / 20 ;
+  align-self: center;
+
+}
+
+.hat img {
+	transform: rotate(-30deg);
+
+}
+
+.mug {
+	grid-area: 15 / 8 / 16 / 9 ;
+	align-self: center;
+
+}
+
+.pipe {
+	grid-area: 15 / 11 / 17 / 12 ;
+	align-self: center;
+
+}
+
+.welcome {
+	grid-area: 4 / 4 / 18 / 18;
+	align-self: center;
+	text-align: center;
+
+}
+
+.dialogue {
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+	overflow: hidden;
+
+}
+
+.sherlock-visible {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: visible;
+	overflow-y: scroll;
+}
+
+.sherlock {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.watson {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.irene {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.moriarty {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.movies {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.door {
+	grid-area: 6 / 8 / 18 / 11;
+	align-self: stretch;
+
+
+}
+
+.lamp	{
+	grid-area: 1 / 8 / 5 / 10;
+	align-self: stretch;
+
+}
+
+.baker {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.enter {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: hidden;
+	overflow-y: scroll;
+}
+
+.intro {
+	grid-area: 4 / 4 / 18 / 18;
+	visibility: visible;
+	overflow-y: scroll;
+}
+
+.js-textbox.visible {
+	visibility: visible;
+}
+
+
+
+.image-left {
+  grid-area: 1 / 1 / 2 / 2;
+	align-items: center;
+	align-self: center;
+  justify-self: center;
+
+}
+
+.text-right {
+	grid-area: 1 / 2 / 2 / 3;
+	align-self: center;
+
+}
